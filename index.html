@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFEAD2;
+            font-family: sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            padding: 1rem;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            color: #9E6F21;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            font-size: larger;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #9E6F21;
+        }
+
+        .hero {
+            display: flex;
+        }
+
+        .left,
+        .right {
+            width: 50%;
+            display: flex;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 500px;
+        }
+
+        .content h1 {
+            font-size: 4rem;
+            color: #7149C6;
+        }
+
+        .content span {
+            color: #7149C6;
+            font-size: 3rem;
+        }
+
+        .content p {
+            font-size: large;
+            margin: 1rem 0;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            width: max-content;
+            font-size: large;
+            color: white;
+            background: rgb(113, 73, 198);
+            background: linear-gradient(90deg, rgba(113, 73, 198, 1) 62%, rgba(175, 142, 246, 1) 100%);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div>
+                <h2 id="logo">Logo</h2>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">LogIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container hero">
+        <div class="left">
+            <div class="content">
+                <h1>UI/UX</h1>
+                <span>Design</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi, magni iusto beatae dolores
+                    rerum quasi eveniet laudantium ipsa aspernatur.</p>
+                <button class="btn">Learn more</button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="UI.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
